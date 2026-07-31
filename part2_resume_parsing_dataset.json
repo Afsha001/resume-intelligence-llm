@@ -1,0 +1,2008 @@
+[
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Riya Sharma\nriya.sharma88@gmail.com | +91-9876543210\nlinkedin.com/in/riyasharma | github.com/riyash\n\nWORK EXPERIENCE\nData Analyst, Bright Analytics Pvt Ltd, Bengaluru\nJune 2022 - Present\n- Built Power BI dashboards used by 5 regional sales teams\n- Automated weekly reporting pipeline, cutting manual effort by 8 hours/week\n\nEDUCATION\nB.Tech in Computer Science, VIT Vellore, 2022\n\nSKILLS\nTechnical: SQL, Python, Power BI, Excel\nSoft: Communication, Stakeholder Management",
+    "output": {
+      "personal_info": {
+        "full_name": "Riya Sharma",
+        "email": "riya.sharma88@gmail.com",
+        "phone": "+91-9876543210",
+        "links": [
+          "linkedin.com/in/riyasharma",
+          "github.com/riyash"
+        ]
+      },
+      "work_experience": [
+        {
+          "company": "Bright Analytics Pvt Ltd",
+          "role": "Data Analyst",
+          "start_date": "June 2022",
+          "end_date": "Present",
+          "highlights": [
+            "Built Power BI dashboards used by 5 regional sales teams",
+            "Automated weekly reporting pipeline, cutting manual effort by 8 hours/week"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "SQL",
+          "Python",
+          "Power BI",
+          "Excel"
+        ],
+        "soft": [
+          "Communication",
+          "Stakeholder Management"
+        ]
+      },
+      "education": [
+        {
+          "institution": "VIT Vellore",
+          "degree": "B.Tech in Computer Science",
+          "graduation_year": "2022"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Daniel Okafor\ndaniel.okafor@outlook.com\n\nEXPERIENCE\nJunior Software Engineer - Lagos Tech Hub (2021 - 2023)\n- Maintained internal billing microservice in Node.js\n\nEDUCATION\nBSc Computer Engineering, University of Lagos, 2021",
+    "output": {
+      "personal_info": {
+        "full_name": "Daniel Okafor",
+        "email": "daniel.okafor@outlook.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Lagos Tech Hub",
+          "role": "Junior Software Engineer",
+          "start_date": "2021",
+          "end_date": "2023",
+          "highlights": [
+            "Maintained internal billing microservice in Node.js"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Lagos",
+          "degree": "BSc Computer Engineering",
+          "graduation_year": "2021"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Contact: Mei Lin | Phone: (65) 8123 4567\n\nExperience\nMarketing Coordinator, SunRise Media, Singapore, Jan 2020 - Dec 2021\n- Managed social media calendar for 3 client brands\n- Increased Instagram engagement by 40% over 6 months\n\nEducation\nDiploma in Mass Communication, Nanyang Polytechnic, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Mei Lin",
+        "email": null,
+        "phone": "(65) 8123 4567",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "SunRise Media",
+          "role": "Marketing Coordinator",
+          "start_date": "Jan 2020",
+          "end_date": "Dec 2021",
+          "highlights": [
+            "Managed social media calendar for 3 client brands",
+            "Increased Instagram engagement by 40% over 6 months"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Nanyang Polytechnic",
+          "degree": "Diploma in Mass Communication",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Afreen Khan\nafreen.khan.cs@gmail.com | 9911223344\n\nPROJECTS\nSentiment Analysis on Product Reviews\nUsed LSTM and TF-IDF to classify Amazon reviews as positive/negative. Achieved 87% accuracy.\nTech: Python, TensorFlow, NLTK\n\nChat Application\nBuilt a real-time chat app with Socket.io and MongoDB.\nTech: Node.js, Socket.io, MongoDB\n\nEDUCATION\nB.Sc. Computer Science, Aligarh Muslim University, Expected 2025\n\nSKILLS\nPython, Java, TensorFlow, Node.js, MongoDB",
+    "output": {
+      "personal_info": {
+        "full_name": "Afreen Khan",
+        "email": "afreen.khan.cs@gmail.com",
+        "phone": "9911223344",
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Sentiment Analysis on Product Reviews",
+          "role": null,
+          "description": "Used LSTM and TF-IDF to classify Amazon reviews as positive/negative. Achieved 87% accuracy.",
+          "technologies": [
+            "Python",
+            "TensorFlow",
+            "NLTK"
+          ],
+          "link": null
+        },
+        {
+          "title": "Chat Application",
+          "role": null,
+          "description": "Built a real-time chat app with Socket.io and MongoDB.",
+          "technologies": [
+            "Node.js",
+            "Socket.io",
+            "MongoDB"
+          ],
+          "link": null
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Python",
+          "Java",
+          "TensorFlow",
+          "Node.js",
+          "MongoDB"
+        ],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Aligarh Muslim University",
+          "degree": "B.Sc. Computer Science",
+          "graduation_year": "Expected 2025"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Carlos Mendez\ncarlos.mendez.dev@gmail.com | +52 55 1234 5678\nportfolio: carlosmendez.dev\n\nFREELANCE EXPERIENCE\nIndependent Full-Stack Developer, Remote, 2019 - Present\n- Delivered 12+ web applications for small business clients across Latin America\n- Built e-commerce storefronts using Shopify and custom React frontends\n\nSKILLS\nReact, Shopify, Node.js, PostgreSQL",
+    "output": {
+      "personal_info": {
+        "full_name": "Carlos Mendez",
+        "email": "carlos.mendez.dev@gmail.com",
+        "phone": "+52 55 1234 5678",
+        "links": [
+          "carlosmendez.dev"
+        ]
+      },
+      "work_experience": [
+        {
+          "company": null,
+          "role": "Independent Full-Stack Developer",
+          "start_date": "2019",
+          "end_date": "Present",
+          "highlights": [
+            "Delivered 12+ web applications for small business clients across Latin America",
+            "Built e-commerce storefronts using Shopify and custom React frontends"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "React",
+          "Shopify",
+          "Node.js",
+          "PostgreSQL"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Dr. Anjali Verma\nanjali.verma@iitb.ac.in\n\nRESEARCH EXPERIENCE\nPostdoctoral Researcher, IIT Bombay, 2021 - Present\n- Working on graph neural networks for molecular property prediction\n\nPUBLICATIONS\n1. Verma, A., Rao, K. \"Graph Attention Networks for Molecular Toxicity Prediction.\" Journal of Chemical Information and Modeling, 2023. doi:10.1021/jcim.example\n2. Verma, A., Singh, P., Rao, K. \"Scalable GNNs for Drug Discovery.\" NeurIPS Workshop, 2022.\n\nEDUCATION\nPhD in Computer Science, IIT Bombay, 2021\nM.Tech in Computer Science, IIT Delhi, 2016",
+    "output": {
+      "personal_info": {
+        "full_name": "Dr. Anjali Verma",
+        "email": "anjali.verma@iitb.ac.in",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "IIT Bombay",
+          "role": "Postdoctoral Researcher",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Working on graph neural networks for molecular property prediction"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [
+        {
+          "title": "Graph Attention Networks for Molecular Toxicity Prediction",
+          "authors": [
+            "Verma, A.",
+            "Rao, K."
+          ],
+          "journal_venue": "Journal of Chemical Information and Modeling",
+          "year": "2023",
+          "doi_or_link": "doi:10.1021/jcim.example"
+        },
+        {
+          "title": "Scalable GNNs for Drug Discovery",
+          "authors": [
+            "Verma, A.",
+            "Singh, P.",
+            "Rao, K."
+          ],
+          "journal_venue": "NeurIPS Workshop",
+          "year": "2022",
+          "doi_or_link": null
+        }
+      ],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "IIT Bombay",
+          "degree": "PhD in Computer Science",
+          "graduation_year": "2021"
+        },
+        {
+          "institution": "IIT Delhi",
+          "degree": "M.Tech in Computer Science",
+          "graduation_year": "2016"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "SARAH JOHNSON SKILLS Python\nsarah.j.dev@gmail.com Java\n+1-415-555-0192 SQL\nEXPERIENCE Docker\nBackend Engineer AWS\nTechNova Inc, San Francisco EDUCATION\nMar 2021 - Present BS Computer Science\n- Designed REST APIs serving 2M requests/day Stanford University, 2020\n- Reduced p99 latency by 35% via caching layer\n",
+    "output": {
+      "personal_info": {
+        "full_name": "Sarah Johnson",
+        "email": "sarah.j.dev@gmail.com",
+        "phone": "+1-415-555-0192",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "TechNova Inc",
+          "role": "Backend Engineer",
+          "start_date": "Mar 2021",
+          "end_date": "Present",
+          "highlights": [
+            "Designed REST APIs serving 2M requests/day",
+            "Reduced p99 latency by 35% via caching layer"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Python",
+          "Java",
+          "SQL",
+          "Docker",
+          "AWS"
+        ],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Stanford University",
+          "degree": "BS Computer Science",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Marcus Webb\nmarcus.webb@proton.me | 07700 900123\n\nEXPERIENCE\nSenior DevOps Engineer, CloudBridge Ltd, London, 2018 - Present\n- Migrated on-prem infrastructure to Kubernetes on AWS EKS\n- Mentored a team of 4 junior engineers\n\nSystems Administrator, DataCore Systems, 2014 - 2018\n- Managed on-prem server fleet of 200+ machines\n\nSKILLS\nKubernetes, AWS, Terraform, Linux, Bash",
+    "output": {
+      "personal_info": {
+        "full_name": "Marcus Webb",
+        "email": "marcus.webb@proton.me",
+        "phone": "07700 900123",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "CloudBridge Ltd",
+          "role": "Senior DevOps Engineer",
+          "start_date": "2018",
+          "end_date": "Present",
+          "highlights": [
+            "Migrated on-prem infrastructure to Kubernetes on AWS EKS",
+            "Mentored a team of 4 junior engineers"
+          ]
+        },
+        {
+          "company": "DataCore Systems",
+          "role": "Systems Administrator",
+          "start_date": "2014",
+          "end_date": "2018",
+          "highlights": [
+            "Managed on-prem server fleet of 200+ machines"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Kubernetes",
+          "AWS",
+          "Terraform",
+          "Linux",
+          "Bash"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Priya Nair\npriya.nair@yahoo.com | +91-8765432109\n\nEXPERIENCE\nData Scientist, FinEdge Analytics, Mumbai, Apr 2021 - Present\n- Built credit risk scoring models improving default prediction by 12%\n\nAdjunct Faculty (Part-time), Mumbai School of Business, Jun 2020 - Present\n- Teach a graduate course on Applied Machine Learning\n\nEDUCATION\nM.Sc. Statistics, University of Mumbai, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Priya Nair",
+        "email": "priya.nair@yahoo.com",
+        "phone": "+91-8765432109",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "FinEdge Analytics",
+          "role": "Data Scientist",
+          "start_date": "Apr 2021",
+          "end_date": "Present",
+          "highlights": [
+            "Built credit risk scoring models improving default prediction by 12%"
+          ]
+        },
+        {
+          "company": "Mumbai School of Business",
+          "role": "Adjunct Faculty (Part-time)",
+          "start_date": "Jun 2020",
+          "end_date": "Present",
+          "highlights": [
+            "Teach a graduate course on Applied Machine Learning"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Mumbai",
+          "degree": "M.Sc. Statistics",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Fatima Al-Sayed\nfatima.alsayed@gmail.com\n\nEXPERIENCE\nProduct Manager, Nile Software Solutions, Cairo, 2016 - 2019\n- Led launch of a mobile banking app with 500K downloads in year one\n\nCareer break (2019 - 2022) - Family caregiving\n\nProduct Manager, Delta Fintech, Cairo, 2022 - Present\n- Rebuilt onboarding flow, reducing drop-off by 22%\n\nEDUCATION\nMBA, American University in Cairo, 2016",
+    "output": {
+      "personal_info": {
+        "full_name": "Fatima Al-Sayed",
+        "email": "fatima.alsayed@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Nile Software Solutions",
+          "role": "Product Manager",
+          "start_date": "2016",
+          "end_date": "2019",
+          "highlights": [
+            "Led launch of a mobile banking app with 500K downloads in year one"
+          ]
+        },
+        {
+          "company": "Delta Fintech",
+          "role": "Product Manager",
+          "start_date": "2022",
+          "end_date": "Present",
+          "highlights": [
+            "Rebuilt onboarding flow, reducing drop-off by 22%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "American University in Cairo",
+          "degree": "MBA",
+          "graduation_year": "2016"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Tom Bradley\ntbradley.dev@gmail.com | 555-234-8899\n\nEXPERIENCE\nJunior Software Developer, PixelWorks Studio, 2023 - Present\n- Developed gameplay features in Unity/C#\n\nHigh School Mathematics Teacher, Roosevelt High School, 2015 - 2022\n- Taught algebra and calculus to 150+ students annually\n\nEDUCATION\nCoding Bootcamp Certificate, App Academy, 2023\nB.A. Mathematics, Ohio State University, 2015",
+    "output": {
+      "personal_info": {
+        "full_name": "Tom Bradley",
+        "email": "tbradley.dev@gmail.com",
+        "phone": "555-234-8899",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "PixelWorks Studio",
+          "role": "Junior Software Developer",
+          "start_date": "2023",
+          "end_date": "Present",
+          "highlights": [
+            "Developed gameplay features in Unity/C#"
+          ]
+        },
+        {
+          "company": "Roosevelt High School",
+          "role": "High School Mathematics Teacher",
+          "start_date": "2015",
+          "end_date": "2022",
+          "highlights": [
+            "Taught algebra and calculus to 150+ students annually"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "App Academy",
+          "degree": "Coding Bootcamp Certificate",
+          "graduation_year": "2023"
+        },
+        {
+          "institution": "Ohio State University",
+          "degree": "B.A. Mathematics",
+          "graduation_year": "2015"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Jian Wu\njian.wu.eng@gmail.com | +86 138 0013 8000\nGitHub: github.com/jianwu | LinkedIn: linkedin.com/in/jianwu-eng | Portfolio: jianwu.dev | Twitter: @jianwucodes\n\nPROJECTS\nDistributed Task Queue\nBuilt a Redis-backed distributed task queue supporting retries and dead-letter queues.\nTech: Go, Redis, Docker\nLink: github.com/jianwu/taskqueue\n\nSKILLS\nGo, Redis, Docker, Kubernetes",
+    "output": {
+      "personal_info": {
+        "full_name": "Jian Wu",
+        "email": "jian.wu.eng@gmail.com",
+        "phone": "+86 138 0013 8000",
+        "links": [
+          "github.com/jianwu",
+          "linkedin.com/in/jianwu-eng",
+          "jianwu.dev",
+          "@jianwucodes"
+        ]
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Distributed Task Queue",
+          "role": null,
+          "description": "Built a Redis-backed distributed task queue supporting retries and dead-letter queues.",
+          "technologies": [
+            "Go",
+            "Redis",
+            "Docker"
+          ],
+          "link": "github.com/jianwu/taskqueue"
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Go",
+          "Redis",
+          "Docker",
+          "Kubernetes"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Grace Mwangi\ngrace.mwangi@gmail.com | +254 712 345678\n\nEXPERIENCE\nHR Business Partner, Savanna Retail Group, Nairobi, 2019 - Present\n- Led company-wide employee engagement initiative, raising satisfaction scores by 18%\n\nSKILLS\nLeadership, Conflict Resolution, Public Speaking, Team Building\n\nEDUCATION\nB.A. Human Resource Management, University of Nairobi, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "Grace Mwangi",
+        "email": "grace.mwangi@gmail.com",
+        "phone": "+254 712 345678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Savanna Retail Group",
+          "role": "HR Business Partner",
+          "start_date": "2019",
+          "end_date": "Present",
+          "highlights": [
+            "Led company-wide employee engagement initiative, raising satisfaction scores by 18%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": [
+          "Leadership",
+          "Conflict Resolution",
+          "Public Speaking",
+          "Team Building"
+        ]
+      },
+      "education": [
+        {
+          "institution": "University of Nairobi",
+          "degree": "B.A. Human Resource Management",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Luis Fernandez\nluis.fernandez@hotmail.com | +34 611 222 333\n\nWORK HISTORY\nQA Engineer | Iberia Software Labs | 03/2020 - 07/2022\n- Automated regression suite reducing manual QA time by 60%\n\nEDUCATION\nIngeniero Informatico, Universidad Politecnica de Madrid, 06/2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Luis Fernandez",
+        "email": "luis.fernandez@hotmail.com",
+        "phone": "+34 611 222 333",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Iberia Software Labs",
+          "role": "QA Engineer",
+          "start_date": "03/2020",
+          "end_date": "07/2022",
+          "highlights": [
+            "Automated regression suite reducing manual QA time by 60%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Universidad Politecnica de Madrid",
+          "degree": "Ingeniero Informatico",
+          "graduation_year": "06/2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Hana Kobayashi\nhana.kobayashi@gmail.com\n\nEXPERIENCE\nUX Designer, Sora Design Studio, Tokyo, 2018-2021\n- Redesigned mobile checkout flow, increasing conversion by 15%\n\nEDUCATION\nBFA Design, Tokyo University of the Arts, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "Hana Kobayashi",
+        "email": "hana.kobayashi@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Sora Design Studio",
+          "role": "UX Designer",
+          "start_date": "2018",
+          "end_date": "2021",
+          "highlights": [
+            "Redesigned mobile checkout flow, increasing conversion by 15%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Tokyo University of the Arts",
+          "degree": "BFA Design",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Aiden O'Connor\naiden.oconnor@gmail.com | 087 123 4567\n\nMY JOURNEY\nGrowth Marketer at Emerald Startups, Dublin, 2020 - Present\n- Grew organic traffic from 5K to 80K monthly visitors in 18 months\n\nWHAT I BRING\nSEO, Google Analytics, Content Strategy, A/B Testing\n\nWHERE I LEARNED IT\nBA Marketing, Trinity College Dublin, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Aiden O'Connor",
+        "email": "aiden.oconnor@gmail.com",
+        "phone": "087 123 4567",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Emerald Startups",
+          "role": "Growth Marketer",
+          "start_date": "2020",
+          "end_date": "Present",
+          "highlights": [
+            "Grew organic traffic from 5K to 80K monthly visitors in 18 months"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "SEO",
+          "Google Analytics",
+          "Content Strategy",
+          "A/B Testing"
+        ],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Trinity College Dublin",
+          "degree": "BA Marketing",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "CURRICULUM VITAE\nName: Elena Petrova\nDate of Birth: 14.03.1994\nNationality: Bulgarian\nEmail: elena.petrova@web.de\nPhone: +49 151 2345678\n\nPROFESSIONAL EXPERIENCE\nFinancial Analyst, Berlin Capital Partners, Berlin, 09/2020 - present\n- Prepared quarterly investment reports for institutional clients\n\nEDUCATION\nMSc Finance, Frankfurt School of Finance and Management, 2020",
+    "output": {
+      "personal_info": {
+        "full_name": "Elena Petrova",
+        "email": "elena.petrova@web.de",
+        "phone": "+49 151 2345678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Berlin Capital Partners",
+          "role": "Financial Analyst",
+          "start_date": "09/2020",
+          "end_date": "present",
+          "highlights": [
+            "Prepared quarterly investment reports for institutional clients"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Frankfurt School of Finance and Management",
+          "degree": "MSc Finance",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Rajesh Kumar\nrajesh.kumar.ml@gmail.com | +91-9012345678\n\nEXPERIENCE\nMachine Learning Engineer, NeuralWorks AI, Hyderabad, 2021 - Present\n- Deployed recommendation system serving 3M+ users\n\nEDUCATION\nM.Tech Artificial Intelligence, IIIT Hyderabad, 2021\nB.Tech Electronics and Communication, NIT Warangal, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "Rajesh Kumar",
+        "email": "rajesh.kumar.ml@gmail.com",
+        "phone": "+91-9012345678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "NeuralWorks AI",
+          "role": "Machine Learning Engineer",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Deployed recommendation system serving 3M+ users"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "IIIT Hyderabad",
+          "degree": "M.Tech Artificial Intelligence",
+          "graduation_year": "2021"
+        },
+        {
+          "institution": "NIT Warangal",
+          "degree": "B.Tech Electronics and Communication",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Ben Torres. Warehouse Associate at QuickShip Logistics since 2022. Contact: ben.torres@gmail.com. Skills: forklift operation, inventory management.",
+    "output": {
+      "personal_info": {
+        "full_name": "Ben Torres",
+        "email": "ben.torres@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "QuickShip Logistics",
+          "role": "Warehouse Associate",
+          "start_date": "2022",
+          "end_date": null,
+          "highlights": []
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "forklift operation",
+          "inventory management"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Susan Mitchell\nsusan.mitchell.vp@gmail.com | +1-212-555-0134\nlinkedin.com/in/susanmitchell\n\nEXPERIENCE\nVP of Engineering, Orbit Cloud Systems, New York, 2020 - Present\n- Scaled engineering org from 20 to 120 engineers\n- Set technical strategy for multi-region cloud migration\n\nDirector of Engineering, Vertex Software, New York, 2016 - 2020\n- Led platform team responsible for core billing infrastructure\n\nSenior Engineering Manager, Vertex Software, New York, 2013 - 2016\n- Managed 3 teams building internal developer tools\n\nSoftware Engineer, Vertex Software, New York, 2010 - 2013\n- Built early version of the company's payments API\n\nEDUCATION\nMS Computer Science, Columbia University, 2010\nBS Computer Science, Rutgers University, 2008\n\nSKILLS\nTechnical: Distributed Systems, AWS, Java, Go\nSoft: Executive Communication, Org Design, Mentorship",
+    "output": {
+      "personal_info": {
+        "full_name": "Susan Mitchell",
+        "email": "susan.mitchell.vp@gmail.com",
+        "phone": "+1-212-555-0134",
+        "links": [
+          "linkedin.com/in/susanmitchell"
+        ]
+      },
+      "work_experience": [
+        {
+          "company": "Orbit Cloud Systems",
+          "role": "VP of Engineering",
+          "start_date": "2020",
+          "end_date": "Present",
+          "highlights": [
+            "Scaled engineering org from 20 to 120 engineers",
+            "Set technical strategy for multi-region cloud migration"
+          ]
+        },
+        {
+          "company": "Vertex Software",
+          "role": "Director of Engineering",
+          "start_date": "2016",
+          "end_date": "2020",
+          "highlights": [
+            "Led platform team responsible for core billing infrastructure"
+          ]
+        },
+        {
+          "company": "Vertex Software",
+          "role": "Senior Engineering Manager",
+          "start_date": "2013",
+          "end_date": "2016",
+          "highlights": [
+            "Managed 3 teams building internal developer tools"
+          ]
+        },
+        {
+          "company": "Vertex Software",
+          "role": "Software Engineer",
+          "start_date": "2010",
+          "end_date": "2013",
+          "highlights": [
+            "Built early version of the company's payments API"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Distributed Systems",
+          "AWS",
+          "Java",
+          "Go"
+        ],
+        "soft": [
+          "Executive Communication",
+          "Org Design",
+          "Mentorship"
+        ]
+      },
+      "education": [
+        {
+          "institution": "Columbia University",
+          "degree": "MS Computer Science",
+          "graduation_year": "2010"
+        },
+        {
+          "institution": "Rutgers University",
+          "degree": "BS Computer Science",
+          "graduation_year": "2008"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Omar Haddad\nomar.haddad@gmail.com | +971 50 123 4567\n\nEXPERIENCE\nCloud Engineer, Gulf Tech Solutions, Dubai, 2021 - Present\n- Managed multi-account AWS Organizations setup for 40+ internal teams\n\nCERTIFICATIONS\nAWS Certified Solutions Architect - Professional (2022)\nCertified Kubernetes Administrator (2023)\n\nEDUCATION\nB.Sc. Information Technology, American University of Sharjah, 2020",
+    "output": {
+      "personal_info": {
+        "full_name": "Omar Haddad",
+        "email": "omar.haddad@gmail.com",
+        "phone": "+971 50 123 4567",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Gulf Tech Solutions",
+          "role": "Cloud Engineer",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Managed multi-account AWS Organizations setup for 40+ internal teams"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "American University of Sharjah",
+          "degree": "B.Sc. Information Technology",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "François Béraud\nfrancois.beraud@gmail.com | +33 6 12 34 56 78\n\nEXPÉRIENCE\nIngénieur Logiciel, ParisTech Solutions, Paris, 2019 - Présent\n- Développement d'API REST en Python/Django\n\nFORMATION\nDiplôme d'Ingénieur, École Polytechnique, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "François Béraud",
+        "email": "francois.beraud@gmail.com",
+        "phone": "+33 6 12 34 56 78",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "ParisTech Solutions",
+          "role": "Ingénieur Logiciel",
+          "start_date": "2019",
+          "end_date": "Présent",
+          "highlights": [
+            "Développement d'API REST en Python/Django"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "École Polytechnique",
+          "degree": "Diplôme d'Ingénieur",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Nadia Ivanova\nnadia.ivanova@gmail.com\n\nEXPERIENCE\nContent Strategist, Bright Media Group, 2021 - Present\n- Increased blog traffic thr",
+    "output": {
+      "personal_info": {
+        "full_name": "Nadia Ivanova",
+        "email": "nadia.ivanova@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Bright Media Group",
+          "role": "Content Strategist",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": []
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Kevin Doyle\nkevin.doyle@gmail.com | 0891234567\n\nCORE SKILLS\nAdobe Photoshop, Illustrator, InDesign, Figma, Typography, Brand Identity Design",
+    "output": {
+      "personal_info": {
+        "full_name": "Kevin Doyle",
+        "email": "kevin.doyle@gmail.com",
+        "phone": "0891234567",
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Adobe Photoshop",
+          "Illustrator",
+          "InDesign",
+          "Figma",
+          "Typography",
+          "Brand Identity Design"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Name | Amit Deshmukh\nEmail | amit.deshmukh@gmail.com\nPhone | 9876501234\nRole | Backend Developer\nCompany | ClearTrip Systems\nDuration | 2020 - 2023\nHighlight | Optimized SQL queries reducing average response time by 45%\nDegree | B.E. Computer Engineering\nInstitution | Pune University\nYear | 2020",
+    "output": {
+      "personal_info": {
+        "full_name": "Amit Deshmukh",
+        "email": "amit.deshmukh@gmail.com",
+        "phone": "9876501234",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "ClearTrip Systems",
+          "role": "Backend Developer",
+          "start_date": "2020",
+          "end_date": "2023",
+          "highlights": [
+            "Optimized SQL queries reducing average response time by 45%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Pune University",
+          "degree": "B.E. Computer Engineering",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Sophie Turner\nsophie.turner@gmail.com | 07123456789\n\nEXPERIENCE\nVolunteer Web Developer, Local Food Bank Charity, 2022 - Present (unpaid)\n- Rebuilt donation portal on WordPress, increasing online donations by 30%\n\nFrontend Developer, Bristol Web Co, 2021 - Present\n- Built responsive landing pages using React and Tailwind CSS\n\nEDUCATION\nBSc Computer Science, University of Bristol, 2021",
+    "output": {
+      "personal_info": {
+        "full_name": "Sophie Turner",
+        "email": "sophie.turner@gmail.com",
+        "phone": "07123456789",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Local Food Bank Charity",
+          "role": "Volunteer Web Developer",
+          "start_date": "2022",
+          "end_date": "Present",
+          "highlights": [
+            "Rebuilt donation portal on WordPress, increasing online donations by 30%"
+          ]
+        },
+        {
+          "company": "Bristol Web Co",
+          "role": "Frontend Developer",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Built responsive landing pages using React and Tailwind CSS"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Bristol",
+          "degree": "BSc Computer Science",
+          "graduation_year": "2021"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Diego Ramirez\ndiego.ramirez@gmail.com | +1-305-555-7788\n\nEXPERIENCE\nSales Executive, SunCoast Realty, Miami, 2019 - Present\n- Closed over $8M in residential property sales in 2023\n\nEDUCATION\nBachelor's Degree, Florida International University, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "Diego Ramirez",
+        "email": "diego.ramirez@gmail.com",
+        "phone": "+1-305-555-7788",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "SunCoast Realty",
+          "role": "Sales Executive",
+          "start_date": "2019",
+          "end_date": "Present",
+          "highlights": [
+            "Closed over $8M in residential property sales in 2023"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Florida International University",
+          "degree": "Bachelor's Degree",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Neha Joshi\nneha.joshi@gmail.com | 9823456712\n\nEXPERIENCE\nBusiness Analyst, TCS, Pune, 2020 - Present\n- Gathered requirements for a core banking modernization project\n\nEDUCATION\nMBA, SIBM Pune, 2020",
+    "output": {
+      "personal_info": {
+        "full_name": "Neha Joshi",
+        "email": "neha.joshi@gmail.com",
+        "phone": "9823456712",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "TCS",
+          "role": "Business Analyst",
+          "start_date": "2020",
+          "end_date": "Present",
+          "highlights": [
+            "Gathered requirements for a core banking modernization project"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "SIBM Pune",
+          "degree": "MBA",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Angela Reyes, RN\nangela.reyes.rn@gmail.com | 555-778-9922\n\nEXPERIENCE\nRegistered Nurse, St. Mary's General Hospital, Chicago, 2017 - Present\n- Provide critical care to patients in a 20-bed ICU\n- Trained 15+ new nursing graduates during onboarding\n\nSKILLS\nTechnical: Patient Assessment, IV Therapy, EPIC EHR System\nSoft: Empathy, Crisis Management, Communication\n\nEDUCATION\nBSN, University of Illinois Chicago, 2017",
+    "output": {
+      "personal_info": {
+        "full_name": "Angela Reyes, RN",
+        "email": "angela.reyes.rn@gmail.com",
+        "phone": "555-778-9922",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "St. Mary's General Hospital",
+          "role": "Registered Nurse",
+          "start_date": "2017",
+          "end_date": "Present",
+          "highlights": [
+            "Provide critical care to patients in a 20-bed ICU",
+            "Trained 15+ new nursing graduates during onboarding"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Patient Assessment",
+          "IV Therapy",
+          "EPIC EHR System"
+        ],
+        "soft": [
+          "Empathy",
+          "Crisis Management",
+          "Communication"
+        ]
+      },
+      "education": [
+        {
+          "institution": "University of Illinois Chicago",
+          "degree": "BSN",
+          "graduation_year": "2017"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Yusuf Demir\nyusuf.demir@gmail.com | +90 532 123 4567\n\nPROJECTS\nSmartQueue - Winner, Istanbul HackTech 2023\nBuilt an AI-based queue management system for retail stores during a 36-hour hackathon.\nTech: Python, OpenCV, Flask\nLink: github.com/yusufdemir/smartqueue\n\nSKILLS\nPython, OpenCV, Flask, Git",
+    "output": {
+      "personal_info": {
+        "full_name": "Yusuf Demir",
+        "email": "yusuf.demir@gmail.com",
+        "phone": "+90 532 123 4567",
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "SmartQueue - Winner, Istanbul HackTech 2023",
+          "role": null,
+          "description": "Built an AI-based queue management system for retail stores during a 36-hour hackathon.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "Flask"
+          ],
+          "link": "github.com/yusufdemir/smartqueue"
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Python",
+          "OpenCV",
+          "Flask",
+          "Git"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Ivan Petrov\nivan.petrov@gmail.com | +7 916 123 4567\n\nPROJECTS\nInventory Management System (Team Lead)\nLed a team of 4 to build a warehouse inventory system with barcode scanning support.\nTech: Java, Spring Boot, MySQL\n\nSKILLS\nJava, Spring Boot, MySQL, Git",
+    "output": {
+      "personal_info": {
+        "full_name": "Ivan Petrov",
+        "email": "ivan.petrov@gmail.com",
+        "phone": "+7 916 123 4567",
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Inventory Management System",
+          "role": "Team Lead",
+          "description": "Led a team of 4 to build a warehouse inventory system with barcode scanning support.",
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL"
+          ],
+          "link": null
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Git"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Wei Zhang\nwei.zhang.dev@gmail.com\n\nPROJECTS\nPortfolio Website - Personal site built with Next.js. github.com/weizhang/portfolio\nExpense Tracker - Mobile app for tracking daily expenses using Flutter\nURL Shortener - Simple URL shortener service using FastAPI and Redis. Link: weiurl.short\n\nSKILLS\nNext.js, Flutter, FastAPI, Redis",
+    "output": {
+      "personal_info": {
+        "full_name": "Wei Zhang",
+        "email": "wei.zhang.dev@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Portfolio Website",
+          "role": null,
+          "description": "Personal site built with Next.js.",
+          "technologies": [
+            "Next.js"
+          ],
+          "link": "github.com/weizhang/portfolio"
+        },
+        {
+          "title": "Expense Tracker",
+          "role": null,
+          "description": "Mobile app for tracking daily expenses using Flutter",
+          "technologies": [
+            "Flutter"
+          ],
+          "link": null
+        },
+        {
+          "title": "URL Shortener",
+          "role": null,
+          "description": "Simple URL shortener service using FastAPI and Redis.",
+          "technologies": [
+            "FastAPI",
+            "Redis"
+          ],
+          "link": "weiurl.short"
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Next.js",
+          "Flutter",
+          "FastAPI",
+          "Redis"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Sam Cole\nSkills: Excel, PowerPoint",
+    "output": {
+      "personal_info": {
+        "full_name": "Sam Cole",
+        "email": null,
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Excel",
+          "PowerPoint"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Julia Hoffmann\njulia.hoffmann@gmx.de | Phone: 030.1234.5678\n\nEXPERIENCE\nProject Manager, Berlin Consulting Group, 2019 - 2023\n- Delivered 6 enterprise software rollouts on time and under budget\n\nEDUCATION\nDiplom-Kauffrau, Humboldt University of Berlin, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "Julia Hoffmann",
+        "email": "julia.hoffmann@gmx.de",
+        "phone": "030.1234.5678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Berlin Consulting Group",
+          "role": "Project Manager",
+          "start_date": "2019",
+          "end_date": "2023",
+          "highlights": [
+            "Delivered 6 enterprise software rollouts on time and under budget"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Humboldt University of Berlin",
+          "degree": "Diplom-Kauffrau",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "R. K. Menon\nrk.menon@gmail.com | 9845123670\n\nEXPERIENCE\nSite Engineer, Coastal Infra Projects, Kochi, 2018 - Present\n- Supervised construction of a 12-story residential complex\n\nEDUCATION\nB.Tech Civil Engineering, NIT Calicut, 2018",
+    "output": {
+      "personal_info": {
+        "full_name": "R. K. Menon",
+        "email": "rk.menon@gmail.com",
+        "phone": "9845123670",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Coastal Infra Projects",
+          "role": "Site Engineer",
+          "start_date": "2018",
+          "end_date": "Present",
+          "highlights": [
+            "Supervised construction of a 12-story residential complex"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "NIT Calicut",
+          "degree": "B.Tech Civil Engineering",
+          "graduation_year": "2018"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Sunita Rao\nsunita.rao@gmail.com | 9988776655\n\nWORK EXPERIENCE\nAccountant, Rao & Associates, Bangalore, April 2017 - Till Date\n- Handle GST filings and monthly reconciliations for 30+ SME clients\n\nEDUCATION\nB.Com, Bangalore University, 2016",
+    "output": {
+      "personal_info": {
+        "full_name": "Sunita Rao",
+        "email": "sunita.rao@gmail.com",
+        "phone": "9988776655",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Rao & Associates",
+          "role": "Accountant",
+          "start_date": "April 2017",
+          "end_date": "Till Date",
+          "highlights": [
+            "Handle GST filings and monthly reconciliations for 30+ SME clients"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Bangalore University",
+          "degree": "B.Com",
+          "graduation_year": "2016"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Ethan Brooks\nethan.brooks@gmail.com | 555-091-2233\n\nEDUCATION\nB.S. Mechanical Engineering, Georgia Tech, 2023, GPA: 3.8/4.0\n\nEXPERIENCE\nManufacturing Intern, Atlanta Motors Inc, Summer 2022\n- Redesigned a bracket component reducing material cost by 10%",
+    "output": {
+      "personal_info": {
+        "full_name": "Ethan Brooks",
+        "email": "ethan.brooks@gmail.com",
+        "phone": "555-091-2233",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Atlanta Motors Inc",
+          "role": "Manufacturing Intern",
+          "start_date": "Summer 2022",
+          "end_date": null,
+          "highlights": [
+            "Redesigned a bracket component reducing material cost by 10%"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Georgia Tech",
+          "degree": "B.S. Mechanical Engineering",
+          "graduation_year": "2023"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Meera Pillai\nmeera.pillai@research.edu\n\nPUBLICATIONS\nPillai, M., \"Low-Resource Machine Translation for Dravidian Languages.\" ACL Findings, 2023.\n\nEDUCATION\nPhD Candidate, Computational Linguistics, University of Edinburgh, Expected 2025",
+    "output": {
+      "personal_info": {
+        "full_name": "Meera Pillai",
+        "email": "meera.pillai@research.edu",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [],
+      "research_publications": [
+        {
+          "title": "Low-Resource Machine Translation for Dravidian Languages",
+          "authors": [
+            "Pillai, M."
+          ],
+          "journal_venue": "ACL Findings",
+          "year": "2023",
+          "doi_or_link": null
+        }
+      ],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Edinburgh",
+          "degree": "PhD Candidate, Computational Linguistics",
+          "graduation_year": "Expected 2025"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Adaeze Nwosu\nadaeze.nwosu@gmail.com | +234 803 555 1234\n\nEXPERIENCE\nSocial Media Manager, Lagos Creative Hub, 2021 - Present\n* Grew Instagram following from 2K to 45K\n-> Ran paid ad campaigns with 4x average ROI\n\nEDUCATION\nB.Sc. Mass Communication, University of Lagos, 2020",
+    "output": {
+      "personal_info": {
+        "full_name": "Adaeze Nwosu",
+        "email": "adaeze.nwosu@gmail.com",
+        "phone": "+234 803 555 1234",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Lagos Creative Hub",
+          "role": "Social Media Manager",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Grew Instagram following from 2K to 45K",
+            "Ran paid ad campaigns with 4x average ROI"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Lagos",
+          "degree": "B.Sc. Mass Communication",
+          "graduation_year": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "JAMES OKONKWO\nJAMES.OKONKWO@GMAIL.COM | +234 701 234 5678\n\nEXPERIENCE\nSUPPLY CHAIN ANALYST, PORT HARCOURT LOGISTICS, 2020 - PRESENT\n- REDUCED SHIPPING DELAYS BY 20% THROUGH ROUTE OPTIMIZATION\n\nEDUCATION\nB.SC. LOGISTICS AND SUPPLY CHAIN MANAGEMENT, UNIVERSITY OF PORT HARCOURT, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "James Okonkwo",
+        "email": "james.okonkwo@gmail.com",
+        "phone": "+234 701 234 5678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Port Harcourt Logistics",
+          "role": "Supply Chain Analyst",
+          "start_date": "2020",
+          "end_date": "Present",
+          "highlights": [
+            "Reduced shipping delays by 20% through route optimization"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Port Harcourt",
+          "degree": "B.Sc. Logistics and Supply Chain Management",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Vikram Chauhan\nvikram.chauhan@gmail.com | 9123456780\n\nEXPERIENCE\nField Sales Officer, Amul Dairy Cooperative, Ahmedabad, 2019 - Present\n- Vitran network mein 50+ retailers add kiye, monthly sales 15% badhaya\n\nEDUCATION\nB.Com, Gujarat University, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Vikram Chauhan",
+        "email": "vikram.chauhan@gmail.com",
+        "phone": "9123456780",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Amul Dairy Cooperative",
+          "role": "Field Sales Officer",
+          "start_date": "2019",
+          "end_date": "Present",
+          "highlights": [
+            "Vitran network mein 50+ retailers add kiye, monthly sales 15% badhaya"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Gujarat University",
+          "degree": "B.Com",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Noah Kim\nnoah.kim.dev@gmail.com\n\nPROJECTS\nWeather Dashboard #React #OpenWeatherAPI #ChartJS\nA responsive dashboard showing 5-day weather forecasts for saved cities.\n",
+    "output": {
+      "personal_info": {
+        "full_name": "Noah Kim",
+        "email": "noah.kim.dev@gmail.com",
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Weather Dashboard",
+          "role": null,
+          "description": "A responsive dashboard showing 5-day weather forecasts for saved cities.",
+          "technologies": [
+            "React",
+            "OpenWeatherAPI",
+            "ChartJS"
+          ],
+          "link": null
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Hassan Malik\nhassan.malik@gmail.com | 03001234567\n\nEXPERIENCE\nGraphic Designer, Creative Minds Studio, Lahore\n- Designed branding materials for 20+ local businesses\n\nSKILLS\nAdobe Illustrator, Photoshop, Canva",
+    "output": {
+      "personal_info": {
+        "full_name": "Hassan Malik",
+        "email": "hassan.malik@gmail.com",
+        "phone": "03001234567",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Creative Minds Studio",
+          "role": "Graphic Designer",
+          "start_date": null,
+          "end_date": null,
+          "highlights": [
+            "Designed branding materials for 20+ local businesses"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Adobe Illustrator",
+          "Photoshop",
+          "Canva"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Aditi Bansal\naditi.bansal@gmail.com | 9871234560\ngithub.com/aditib\n\nPROJECTS\nFake News Detection using BERT\nFine-tuned BERT to classify news articles as real or fake, achieving 92% F1-score.\nTech: Python, PyTorch, Hugging Face Transformers\n\nPUBLICATIONS\nBansal, A., Gupta, R. \"Transformer-Based Approaches to Misinformation Detection.\" Student Research Symposium, AMU, 2024.\n\nEDUCATION\nM.Sc. Data Science, Aligarh Muslim University, 2024",
+    "output": {
+      "personal_info": {
+        "full_name": "Aditi Bansal",
+        "email": "aditi.bansal@gmail.com",
+        "phone": "9871234560",
+        "links": [
+          "github.com/aditib"
+        ]
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Fake News Detection using BERT",
+          "role": null,
+          "description": "Fine-tuned BERT to classify news articles as real or fake, achieving 92% F1-score.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face Transformers"
+          ],
+          "link": null
+        }
+      ],
+      "research_publications": [
+        {
+          "title": "Transformer-Based Approaches to Misinformation Detection",
+          "authors": [
+            "Bansal, A.",
+            "Gupta, R."
+          ],
+          "journal_venue": "Student Research Symposium, AMU",
+          "year": "2024",
+          "doi_or_link": null
+        }
+      ],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "Aligarh Muslim University",
+          "degree": "M.Sc. Data Science",
+          "graduation_year": "2024"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Laura Bianchi\nlaura.bianchi@gmail.com | +39 333 123 4567\n\nEXPERIENCE\nEnvi-\nronmental Consultant, GreenPath Consult-\ning, Milan, 2020 - Present\n- Conducted sustainability audits for 15+ manufactur-\ning clients\n\nEDUCATION\nMSc Environmental Science, University of Milan, 2019",
+    "output": {
+      "personal_info": {
+        "full_name": "Laura Bianchi",
+        "email": "laura.bianchi@gmail.com",
+        "phone": "+39 333 123 4567",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "GreenPath Consulting",
+          "role": "Environmental Consultant",
+          "start_date": "2020",
+          "end_date": "Present",
+          "highlights": [
+            "Conducted sustainability audits for 15+ manufacturing clients"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Milan",
+          "degree": "MSc Environmental Science",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Zara Ahmed | zaraahmed.design\n\nEXPERIENCE\nUI/UX Designer, PixelCraft Studio, Karachi, 2022 - Present\n- Designed onboarding flows for a fintech app used by 200K+ users\n\nSKILLS\nFigma, Adobe XD, User Research",
+    "output": {
+      "personal_info": {
+        "full_name": "Zara Ahmed",
+        "email": null,
+        "phone": null,
+        "links": [
+          "zaraahmed.design"
+        ]
+      },
+      "work_experience": [
+        {
+          "company": "PixelCraft Studio",
+          "role": "UI/UX Designer",
+          "start_date": "2022",
+          "end_date": "Present",
+          "highlights": [
+            "Designed onboarding flows for a fintech app used by 200K+ users"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Figma",
+          "Adobe XD",
+          "User Research"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Convert the following raw resume text into the specified structured JSON format. Do not fabricate information that is not explicitly stated in the text.",
+    "input": "Peter Nguyen\npeter.nguyen@gmail.com | +61 412 345 678\n\nEXPERIENCE\nOperations Manager, Sydney Freight Co, Sydney, 2018 - Present\n- Oversaw daily operations across three distribution centers, coordinating a workforce of over 80 staff while maintaining a 98% on-time delivery rate throughout the fiscal year\n\nEDUCATION\nBachelor of Business, University of Sydney, 2017",
+    "output": {
+      "personal_info": {
+        "full_name": "Peter Nguyen",
+        "email": "peter.nguyen@gmail.com",
+        "phone": "+61 412 345 678",
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Sydney Freight Co",
+          "role": "Operations Manager",
+          "start_date": "2018",
+          "end_date": "Present",
+          "highlights": [
+            "Oversaw daily operations across three distribution centers, coordinating a workforce of over 80 staff while maintaining a 98% on-time delivery rate throughout the fiscal year"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [],
+        "soft": []
+      },
+      "education": [
+        {
+          "institution": "University of Sydney",
+          "degree": "Bachelor of Business",
+          "graduation_year": "2017"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are a resume parsing engine. Read the resume text and output only the structured JSON object, following the schema exactly.",
+    "input": "Chloe Martin\nchloe.martin@gmail.com | 06 45 78 90 12\n\nPROJECTS\nBudget Planner App - Python, SQLite, Tkinter\n\nSKILLS\nPython, SQLite, Tkinter, Git",
+    "output": {
+      "personal_info": {
+        "full_name": "Chloe Martin",
+        "email": "chloe.martin@gmail.com",
+        "phone": "06 45 78 90 12",
+        "links": []
+      },
+      "work_experience": [],
+      "projects": [
+        {
+          "title": "Budget Planner App",
+          "role": null,
+          "description": null,
+          "technologies": [
+            "Python",
+            "SQLite",
+            "Tkinter"
+          ],
+          "link": null
+        }
+      ],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Python",
+          "SQLite",
+          "Tkinter",
+          "Git"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  },
+  {
+    "instruction": "Extract structured information from the following resume text and return it strictly as JSON matching the target schema. Use null for missing scalar fields and empty arrays for missing list fields.",
+    "input": "Isabella Rossi\nisabella.rossi@gmail.com | +39 345 678 9012\nlinkedin.com/in/isabellarossi\n\nEXPERIENCE\nProduct Owner, Rome FinTech Labs, 09/2022 - Present\n- Defined product roadmap for a B2B payments platform\n\nBusiness Analyst, Milan Banking Group, 2019 - August 2022\n- Analyzed transaction data to identify fraud patterns\n\nEDUCATION\nMSc Business Analytics, Bocconi University, 2019\n\nSKILLS\nTechnical: SQL, Jira, Tableau\nSoft: Stakeholder Management, Negotiation, Strategic Thinking",
+    "output": {
+      "personal_info": {
+        "full_name": "Isabella Rossi",
+        "email": "isabella.rossi@gmail.com",
+        "phone": "+39 345 678 9012",
+        "links": [
+          "linkedin.com/in/isabellarossi"
+        ]
+      },
+      "work_experience": [
+        {
+          "company": "Rome FinTech Labs",
+          "role": "Product Owner",
+          "start_date": "09/2022",
+          "end_date": "Present",
+          "highlights": [
+            "Defined product roadmap for a B2B payments platform"
+          ]
+        },
+        {
+          "company": "Milan Banking Group",
+          "role": "Business Analyst",
+          "start_date": "2019",
+          "end_date": "August 2022",
+          "highlights": [
+            "Analyzed transaction data to identify fraud patterns"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "SQL",
+          "Jira",
+          "Tableau"
+        ],
+        "soft": [
+          "Stakeholder Management",
+          "Negotiation",
+          "Strategic Thinking"
+        ]
+      },
+      "education": [
+        {
+          "institution": "Bocconi University",
+          "degree": "MSc Business Analytics",
+          "graduation_year": "2019"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Parse the resume text below into the structured JSON schema. If a field is not present in the text, set it to null (or an empty array for list fields) rather than guessing.",
+    "input": "Professional Summary: My name is Grace Lin and I am a dedicated backend developer with 3 years of experience.\n\nEXPERIENCE\nBackend Developer, Taipei Software House, 2021 - Present\n- Built payment reconciliation service handling 50K transactions/day\n\nSKILLS\nPython, Django, PostgreSQL",
+    "output": {
+      "personal_info": {
+        "full_name": "Grace Lin",
+        "email": null,
+        "phone": null,
+        "links": []
+      },
+      "work_experience": [
+        {
+          "company": "Taipei Software House",
+          "role": "Backend Developer",
+          "start_date": "2021",
+          "end_date": "Present",
+          "highlights": [
+            "Built payment reconciliation service handling 50K transactions/day"
+          ]
+        }
+      ],
+      "projects": [],
+      "research_publications": [],
+      "skills": {
+        "technical": [
+          "Python",
+          "Django",
+          "PostgreSQL"
+        ],
+        "soft": []
+      },
+      "education": []
+    }
+  }
+]
